@@ -21,16 +21,11 @@ const leaderboardData: LeaderboardEntry[] = [
 export default function Leaderboard() {
     return (
         <div>
-            <div className={'flex ml-[180px] gap-3'}>
                 <div className={'rounded-lg text-[13px] items-center bg-[#09A896] flex gap-2 mt-10 px-6 py-2'}>
                     <h1 className="text-white md:text-3xl">Leaderboard</h1>
                     <Image src={winner} alt={'winnerImage'} className={'w-6 h-6'} />
                 </div>
-                <div className={'bg-[#09A896] mt-10 text-center py-1 rounded-lg px-3 flex items-center'}>
-                    {/*pass an icon*/}
-                    {/*<Icon icon={'ic:baseline-arrow-drop-up'} className={'text-center text-white h-8 w-8'} />*/}
-                </div>
-            </div>
+
             <div className="bg-[#073A45] min-h-screen flex flex-col items-center">
                 <div className="mt-6 w-full max-w-4xl overflow-x-auto">
                     <table className="min-w-full bg-[#09A896]">

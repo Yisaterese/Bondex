@@ -27,3 +27,12 @@ export type LeaderboardEntry = {
     };
     reward: string;
 }
+
+export type EsusuEntry = {
+    name: string;
+    wallet: string;
+    deposits: string;
+
+    reward: string;
+}
+

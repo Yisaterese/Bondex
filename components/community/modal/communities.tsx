@@ -1,7 +1,9 @@
+'use client'
 import React from 'react';
 import Link from 'next/link';
 
 export default function CommunityMenu() {
+
     return (
         <div className="relative bg-[#14B8A6] text-lg z-[50] w-full md:w-auto">
             {/* Dropdown Menu */}
@@ -15,7 +17,9 @@ export default function CommunityMenu() {
                 </div>
                 <ul className="flex font-bold flex-col text-[#073A45] md:text-[15px] text-[12px]">
                     <li className="hover:bg-gray-200 px-4 py-2 cursor-pointer">
-                        <Link href="/community/esusu">Esusu</Link>
+                        <Link href={'/community/esusu'} >
+                           <h1>Esusu</h1>
+                        </Link>
                     </li>
                     <li className="hover:bg-gray-200 px-4 py-2 cursor-pointer">
                         <Link href="/community/save-up">Save up</Link>
